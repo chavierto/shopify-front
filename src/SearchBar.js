@@ -9,10 +9,10 @@ function SearchBar(props) {
 		const baseURL = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&type=movie&s=${props.searchTerm}`;
 		e.preventDefault();
 		const movies = await axios.get(baseURL);
-		console.log(movies.data.Search);
+		
 		const updatedMovies = movies.data.Search;
 		function compare(a, b) {
-			console.log(a.Year);
+			
 			const movieA = a.Year;
 			const movieB = b.Year;
 
