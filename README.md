@@ -19,3 +19,11 @@ We'd like a simple to use interface that makes it easy to:
 - Movies in search results can be added and removed from the nomination list.
 - If a search result has already been nominated, disable its nominate button.
 - Display a banner when the user has 5 nominations.
+
+
+# MVP:
+- As a user, I want to be able to search for a movie title.
+- As a user, I want to have the results of my search display the title of the movie along with the poster and release date.
+- As a user, I want to have the results of my search to be displayed chronologically.
+- As a user, I want to add up to 5 movies to a *nominees* list.
+- As a user, I want to be able to remove movies I've added to my *nominees* list.
