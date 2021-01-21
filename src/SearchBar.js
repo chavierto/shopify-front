@@ -10,7 +10,9 @@ function SearchBar(props) {
 		e.preventDefault();
 		const movies = await axios.get(baseURL);
 
+		// Save returned movies into variable
 		const updatedMovies = movies.data.Search;
+		// Create compare function to sort movies
 		function compare(a, b) {
 			const movieA = a.Year;
 			const movieB = b.Year;
@@ -27,7 +29,7 @@ function SearchBar(props) {
 		if (updatedMovies) {
 			updatedMovies.sort(compare);
 		}
-
+		// Set movies to state
 		props.setMovieList(updatedMovies);
 	}
 

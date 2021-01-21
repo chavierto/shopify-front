@@ -11,6 +11,7 @@ function MovieCard(props) {
 			<div className='movie-info'>
 				<p>{movie.Title}</p>
 				<p>{movie.Year}</p>
+				<button>Nominate</button>
 			</div>
 		</div>
 	);

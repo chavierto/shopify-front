@@ -41,10 +41,7 @@ class App extends Component {
 						setSearchTerm={this.setSearchTerm}
 						setMovieList={this.setMovieList}
 					/>
-					<Results
-						movieList={this.state.movieList}
-						setNominees={this.setNominees}
-					/>
+					<Results movieList={this.state.movieList} />
 					<Nominees setNominees={this.setNominees} />
 				</main>
 			</div>
